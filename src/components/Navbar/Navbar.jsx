@@ -63,7 +63,7 @@ const Navbar = () => {
             className="text-yellow-200 hover:text-yellow-100"
           >
             Click Here to Register for best online courses ( ₹200 Discount on
-            first 20 Students)
+            first 30 Students)
           </a>
         </motion.div>
       </div>

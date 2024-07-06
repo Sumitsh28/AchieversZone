@@ -46,7 +46,7 @@ const Hero = () => {
                 your journey to success today!
                 <br />
                 <span className="text-red-600 font-bold">
-                  (Only for Class 11th & 12th English Medium)
+                  (Only for Class 11th, 12th & Droppers)
                 </span>
               </p>
               <button

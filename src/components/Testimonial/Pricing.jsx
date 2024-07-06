@@ -80,22 +80,12 @@ const Pricing = () => {
   return (
     <div className="py-10 md:px-14 p-4 max-w-screen-2xl mx-auto" id="pricing">
       <div className="text-center flex flex-col items-center">
-        <h2
-          className="md:text-5xl text-2xl font-extrabold text-primary mb-2"
-          data-aos="fade-up"
-        >
-          Here are all plans of our online courses
-        </h2>
-        <p className="text-gray-600 md:w-1/3 mx-auto" data-aos="fade-up">
-          Expert guidance at nominal price.
-        </p>
-
         <motion.div
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 mt-20 md:w-11/12 "
+          className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 mb-5 md:w-11/12 "
         >
           {features.map((pkg, index) => (
             <div
@@ -117,6 +107,28 @@ const Pricing = () => {
             </div>
           ))}
         </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-white rounded-lg shadow-lg p-6 m-4 overflow-hidden transition-all duration-300 mb-20"
+          data-aos="fade-up"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-500 hover:from-yellow-300 hover:to-red-400 opacity-0 transition-opacity duration-300 rounded-lg" />
+          <div className="relative z-10">
+            <p className="text-red-500 font-bold text-3xl">
+              Demo Classes will be taken on 15, 16 July 2024
+            </p>
+          </div>
+        </motion.div>
+        <h2
+          className="md:text-5xl text-2xl font-extrabold text-primary mb-2"
+          data-aos="fade-up"
+        >
+          Here are all plans of our online courses
+        </h2>
+        <p className="text-gray-600 md:w-1/3 mx-auto" data-aos="fade-up">
+          Expert guidance at nominal price.
+        </p>
+
         <div className="mt-16">
           <label
             htmlFor="toggle"
