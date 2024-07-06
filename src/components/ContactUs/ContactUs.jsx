@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     contactNumber: "",
-    email: "",
+
     message: "",
   });
 
@@ -16,9 +16,9 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, contactNumber, email, message } = formData;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=8795433312&text=${encodeURIComponent(
-      `Name: ${name}\nContact Number: ${contactNumber}\nEmail: ${email}\nMessage: ${message}`
+    const { name, contactNumber, message } = formData;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+918795433312&text=${encodeURIComponent(
+      `Name: ${name}\nContact Number: ${contactNumber}\nMessage: ${message}`
     )}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -45,7 +45,7 @@ const ContactForm = () => {
         </div>
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-xl font-bold mb-6 text-center text-gray-800 dark:text-white">
-            Fill this to ask your queries!
+            Fill this to connect through WhatsApp!
           </h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -74,19 +74,7 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700 dark:text-white">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:primary focus:primary"
-                required
-              />
-            </div>
+
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 dark:text-white">
                 Message

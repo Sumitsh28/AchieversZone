@@ -6,6 +6,7 @@ import r from "../../assets/members/4.png";
 import t from "../../assets/members/3.png";
 import y from "../../assets/members/6.png";
 import u from "../../assets/members/7.png";
+import i from "../../assets/members/8.png";
 
 const teamMembers = [
   {
@@ -50,7 +51,24 @@ const teamMembers = [
     clg: "NEET Qualified",
     image: u,
   },
+  {
+    name: "Kuldeep Kumar",
+    role: "Biology Faculty",
+    clg: "680/720 in NEET",
+    image: i,
+  },
 ];
+
+/**Mentoring
+One to one mentoring for a better future ,
+
+Top educators
+Learn from best teachers from IITs
+
+Live classes
+Interactive classes with proper test series and doubt sessions.
+
+**/
 
 const Services = () => {
   return (

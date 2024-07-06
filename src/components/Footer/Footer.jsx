@@ -24,7 +24,16 @@ const FooterLinks = [
 const ResourcesLinks = [
   {
     title: "Notes",
-    link: "/#ebooks",
+    link: "/notes",
+  },
+];
+
+const ContactInfo = [
+  {
+    title: "Phone Number: 87954 33312",
+  },
+  {
+    title: "Email: achieverszone100@gmail.com",
   },
 ];
 const Footer = () => {
@@ -53,7 +62,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Links */}
-          <div className="grid md:grid-cols-2 gap-6 md:col-span-2">
+          <div className="grid md:grid-cols-3 gap-6 md:col-span-2">
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
@@ -75,6 +84,24 @@ const Footer = () => {
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Contact Information
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {ContactInfo.map((link) => (
+                    <li
+                      key={link.title}
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-400"
+                    >
+                      <a href={link.link}>{link.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   Resources
                 </h1>
                 <ul className="flex flex-col gap-3">
@@ -83,7 +110,7 @@ const Footer = () => {
                       key={link.title}
                       className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-400"
                     >
-                      <a href={link.link}>{link.title}</a>
+                      <Link to={link.link}>{link.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -97,3 +124,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// number , email

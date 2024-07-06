@@ -44,9 +44,9 @@ const Navbar = () => {
       className="relative z-10 w-full dark:bg-black dark:text-white duration-300
     "
     >
-      <div className="fixed top-0 left-0 w-full h-8 bg-gradient-to-r from-blue-500 to-green-500 text-white flex items-center justify-center">
+      <div className="fixed top-0 left-0 w-full h-8 bg-gradient-to-r from-blue-500 to-green-500 text-white flex items-center justify-center overflow-hidden">
         <motion.div
-          className="text-lg font-bold"
+          className="text-lg font-bold whitespace-nowrap"
           initial={{ x: "-100%" }}
           animate={{ x: "100%" }}
           transition={{
@@ -62,20 +62,21 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-yellow-200 hover:text-yellow-100"
           >
-            Register now!
+            Click Here to Register for best online courses ( ₹200 Discount on
+            first 20 Students)
           </a>
         </motion.div>
       </div>
 
-      <div className="container py-3 md:py-2 mt-10">
+      <div className="container mt-10">
         <div className="flex justify-between items-center">
           {/* Logo section */}
           <Link to="/" className="flex items-center gap-3">
             <img src={Logo} alt="" className="w-[90px] h-[90px]" />
-            <span className="text-xl md:text-3xl font-semibold text-primary">
+            <span className="text-lg md:text-3xl font-semibold text-primary">
               Achiever's
             </span>
-            <span className="text-xl md:text-3xl font-semibold text-[#35AB9C]">
+            <span className="text-lg md:text-3xl font-semibold text-[#35AB9C]">
               Zone
             </span>
           </Link>

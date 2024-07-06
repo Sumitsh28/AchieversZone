@@ -34,8 +34,8 @@ const Hero = () => {
                 className="text-4xl sm:text-5xl font-semibold"
                 style={{ lineHeight: 1.2 }}
               >
-                Enroll Yourself in the{" "}
-                <span className="text-primary">Achiever's</span>
+                Enroll Yourself in the online courses of
+                <span className="text-primary"> Achiever's</span>
                 <span className="text-[#35AB9C]"> Zone</span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="300">
@@ -44,6 +44,10 @@ const Hero = () => {
                 personalized study plans, and a proven track record, we are
                 dedicated to helping you achieve your academic dreams. Start
                 your journey to success today!
+                <br />
+                <span className="text-red-600 font-bold">
+                  (Only for Class 11th & 12th English Medium)
+                </span>
               </p>
               <button
                 data-aos="fade-up"

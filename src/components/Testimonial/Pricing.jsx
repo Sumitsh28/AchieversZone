@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { FcInfo } from "react-icons/fc";
+import { IoPeople } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
+import { BsBroadcast } from "react-icons/bs";
+
 import { motion } from "framer-motion";
 
 const fadeIn = (direction, delay) => {
@@ -30,41 +33,90 @@ const Pricing = () => {
     {
       name: "Boards",
       AllPrice: 1499,
+      AllPriceCross: 2099,
       SinglePrice: 699,
       AllPriceSix: 6999,
-      AllPriceSixCross: 8994,
+      AllPriceSixCross: 12579,
       link: "https://forms.gle/pLyjwS62eBRRSSdA6",
     },
     {
       name: "JEE Mains / NEET",
       AllPrice: 1999,
+      AllPriceCross: 2699,
       SinglePrice: 899,
       AllPriceSix: 9999,
-      AllPriceSixCross: 11994,
+      AllPriceSixCross: 15999,
       link: "https://forms.gle/oWK5WMqhTQPvgWJM7",
     },
     {
       name: "JEE Advanced",
       AllPrice: 2999,
+      AllPriceCross: 3899,
       SinglePrice: 1299,
       AllPriceSix: 15999,
-      AllPriceSixCross: 17994,
+      AllPriceSixCross: 23379,
       link: "https://forms.gle/YoZpTvr18wEQut119",
+    },
+  ];
+
+  const features = [
+    {
+      name: "Mentoring",
+      desc: "One to One mentoring for a better future",
+      img: <IoPeople className="text-2xl text-violet-600" />,
+    },
+    {
+      name: "Top Educators",
+      desc: "Learn from best teachers from IITs",
+      img: <FaStar className="text-2xl text-yellow-500" />,
+    },
+    {
+      name: "Live classes",
+      desc: "Interactive classes with proper test series and doubt sessions",
+      img: <BsBroadcast className="text-2xl text-red-500" />,
     },
   ];
 
   return (
     <div className="py-10 md:px-14 p-4 max-w-screen-2xl mx-auto" id="pricing">
-      <div className="text-center">
+      <div className="text-center flex flex-col items-center">
         <h2
           className="md:text-5xl text-2xl font-extrabold text-primary mb-2"
           data-aos="fade-up"
         >
-          Here are all our plans
+          Here are all plans of our online courses
         </h2>
         <p className="text-gray-600 md:w-1/3 mx-auto" data-aos="fade-up">
           Expert guidance at nominal price.
         </p>
+
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 mt-20 md:w-11/12 "
+        >
+          {features.map((pkg, index) => (
+            <div
+              key={index}
+              className="relative border py-5 rounded-lg shadow-3xl flex flex-col items-center justify-center gap-5"
+            >
+              <div className="flex flex-row items-center justify-center gap-5">
+                <div className="flex items-center justify-center border-2 rounded-full p-1">
+                  {pkg.img}
+                </div>
+
+                <h3 className="text-xl font-bold text-center text-primary">
+                  {pkg.name}
+                </h3>
+              </div>
+              <h3 className="text-xl font-bold text-center text-gray-600">
+                {pkg.desc}
+              </h3>
+            </div>
+          ))}
+        </motion.div>
         <div className="mt-16">
           <label
             htmlFor="toggle"
@@ -104,6 +156,12 @@ const Pricing = () => {
             <h3 className="text-3xl font-bold text-center text-primary">
               {pkg.name}
             </h3>
+
+            {!isSingle && (
+              <p className="text-center text-gray-500 text-4xl line-through mb-5 mt-5 ">
+                ₹{pkg.AllPriceCross}
+              </p>
+            )}
 
             <p className="mt-5 text-center text-secondary text-4xl font-bold mb-5">
               {isSingle ? `₹${pkg.SinglePrice}` : `₹${pkg.AllPrice}`}
@@ -154,3 +212,5 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
+// Prices whatsapp se lene h
