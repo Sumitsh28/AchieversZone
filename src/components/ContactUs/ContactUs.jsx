@@ -17,7 +17,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, contactNumber, email, message } = formData;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=9958732580&text=${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=8795433312&text=${encodeURIComponent(
       `Name: ${name}\nContact Number: ${contactNumber}\nEmail: ${email}\nMessage: ${message}`
     )}`;
     window.open(whatsappUrl, "_blank");
