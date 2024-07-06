@@ -14,7 +14,7 @@ const Home = () => {
       <BrandsLogo />
       <Services />
       <Pricing />
-      <BlogsComp />
+      {/* <BlogsComp /> */}
       <ContactForm />
       <Footer />
     </div>
