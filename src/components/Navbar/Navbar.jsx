@@ -62,8 +62,8 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-yellow-200 hover:text-yellow-100"
           >
-            Click Here to Register for best online courses ( ₹200 Discount on
-            first 30 Students)
+            Click Here to Register for best online courses ( ₹9 for
+            registration)
           </a>
         </motion.div>
       </div>

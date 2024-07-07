@@ -32,29 +32,29 @@ const Pricing = () => {
   const packages = [
     {
       name: "Boards",
-      AllPrice: 1499,
-      AllPriceCross: 2099,
-      SinglePrice: 699,
-      AllPriceSix: 6999,
-      AllPriceSixCross: 12579,
+      AllPrice: 799,
+      AllPriceCross: 999,
+      SinglePrice: 299,
+      AllPriceSix: 4500,
+      AllPriceSixCross: 5999,
       link: "https://forms.gle/pLyjwS62eBRRSSdA6",
     },
     {
       name: "JEE Mains / NEET",
-      AllPrice: 1999,
-      AllPriceCross: 2699,
-      SinglePrice: 899,
-      AllPriceSix: 9999,
-      AllPriceSixCross: 15999,
+      AllPrice: 899,
+      AllPriceCross: 1199,
+      SinglePrice: 399,
+      AllPriceSix: 5000,
+      AllPriceSixCross: 6999,
       link: "https://forms.gle/oWK5WMqhTQPvgWJM7",
     },
     {
       name: "JEE Advanced",
-      AllPrice: 2999,
-      AllPriceCross: 3899,
-      SinglePrice: 1299,
-      AllPriceSix: 15999,
-      AllPriceSixCross: 23379,
+      AllPrice: 999,
+      AllPriceCross: 1499,
+      SinglePrice: 499,
+      AllPriceSix: 5500,
+      AllPriceSixCross: 8999,
       link: "https://forms.gle/YoZpTvr18wEQut119",
     },
   ];
@@ -223,7 +223,7 @@ const Pricing = () => {
       </motion.div>
       <div className="flex flex-col items-center justify-center mt-5">
         <h1
-          className="text-red-500 mx-auto font-bold text-3xl"
+          className="text-red-500 mx-auto font-bold text-2xl"
           data-aos="fade-up"
         >
           *Prices may be decreased if we got good enough number of students (we
