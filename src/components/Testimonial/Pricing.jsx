@@ -32,7 +32,7 @@ const Pricing = () => {
   const packages = [
     {
       name: "Boards",
-      AllPrice: 799,
+      AllPrice: 899,
       AllPriceCross: 999,
       SinglePrice: 299,
       AllPriceSix: 4500,
@@ -41,7 +41,7 @@ const Pricing = () => {
     },
     {
       name: "JEE Mains / NEET",
-      AllPrice: 899,
+      AllPrice: 999,
       AllPriceCross: 1199,
       SinglePrice: 399,
       AllPriceSix: 5000,
@@ -50,7 +50,7 @@ const Pricing = () => {
     },
     {
       name: "JEE Advanced",
-      AllPrice: 999,
+      AllPrice: 1099,
       AllPriceCross: 1499,
       SinglePrice: 499,
       AllPriceSix: 5500,
