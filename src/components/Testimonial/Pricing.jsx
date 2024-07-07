@@ -220,7 +220,10 @@ const Pricing = () => {
         ))}
       </motion.div>
       <div className="flex flex-col items-center justify-center mt-5">
-        <h1 className="text-red-500 mx-auto font-bold" data-aos="fade-up">
+        <h1
+          className="text-red-500 mx-auto font-bold text-3xl"
+          data-aos="fade-up"
+        >
           *Prices may be decreased if we got good enough number of students (we
           will try to keep it minimum)
         </h1>
