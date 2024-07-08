@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const TeamMember = ({ name, role, image, clg }) => {
+const TeamMember = ({ name, role, image, clg, ach }) => {
   const [isToggled, setIsToggled] = useState(false);
   const cardRef = useRef(null);
 
@@ -41,6 +41,7 @@ const TeamMember = ({ name, role, image, clg }) => {
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-2xl font-bold">{name}</h2>
           <p className="text-lg">{clg}</p>
+          <p className="text-lg">{ach}</p>
         </div>
         <p className="text-3xl font-extralight">{role}</p>
       </motion.div>

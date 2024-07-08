@@ -13,6 +13,7 @@ const teamMembers = [
     name: "Shivansh",
     role: "Chemistry Faculty",
     clg: "IIT BHU",
+    ach: "AIR 1 in Chemistry JEE Mains",
     image: q,
   },
   {
@@ -102,6 +103,7 @@ const Services = () => {
                   role={member.role}
                   image={member.image}
                   clg={member.clg}
+                  ach={member.ach}
                 />
               ))}
             </div>

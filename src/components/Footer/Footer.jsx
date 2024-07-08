@@ -30,7 +30,7 @@ const ResourcesLinks = [
 
 const ContactInfo = [
   {
-    title: "Phone Number: 87954 33312",
+    title: "Phone Number: 95175 81250, 87954 33312",
   },
   {
     title: "Email: achieverszone100@gmail.com",

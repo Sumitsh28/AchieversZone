@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/website/logo.png";
+import JoinWhatsappButton from "./Whatsapp";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, contactNumber, message } = formData;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+918795433312&text=${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+919517581250&text=${encodeURIComponent(
       `Name: ${name}\nContact Number: ${contactNumber}\nMessage: ${message}`
     )}`;
     window.open(whatsappUrl, "_blank");
@@ -100,6 +101,7 @@ const ContactForm = () => {
           </form>
         </div>
       </motion.div>
+      <JoinWhatsappButton />
     </div>
   );
 };
