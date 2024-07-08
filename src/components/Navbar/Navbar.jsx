@@ -108,7 +108,7 @@ const Navbar = () => {
                   window.open("https://forms.gle/fKyB9792DzVtBLKF7", "_blank")
                 }
               >
-                Get in Touch
+                Register Now
               </button>
               <DarkMode />
             </ul>

@@ -54,8 +54,11 @@ const Hero = () => {
                 data-aos-delay="500"
                 data-aos-offset="0"
                 className="primary-btn"
+                onClick={() =>
+                  window.open("https://forms.gle/fKyB9792DzVtBLKF7", "_blank")
+                }
               >
-                Learn More
+                Register Now
               </button>
             </div>
           </div>

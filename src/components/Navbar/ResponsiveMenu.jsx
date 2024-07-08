@@ -35,6 +35,14 @@ const ResponsiveMenu = ({ showMenu, toggle }) => {
             ))}
           </ul>
         </nav>
+        <button
+          className="primary-btn mt-5"
+          onClick={() =>
+            window.open("https://forms.gle/fKyB9792DzVtBLKF7", "_blank")
+          }
+        >
+          Register Now
+        </button>
       </div>
     </div>
   );
