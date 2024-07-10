@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/website/logo.png";
 import JoinWhatsappButton from "./Whatsapp";
+import JoinInstaButton from "./Instagram";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -101,7 +102,10 @@ const ContactForm = () => {
           </form>
         </div>
       </motion.div>
-      <JoinWhatsappButton />
+      <div className="flex flex-col md:flex-row">
+        <JoinWhatsappButton />
+        <JoinInstaButton />
+      </div>
     </div>
   );
 };
