@@ -115,8 +115,6 @@ const Pricing = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-500 hover:from-yellow-300 hover:to-red-400 opacity-0 transition-opacity duration-300 rounded-lg" />
           <div className="relative">
             <p className="text-red-500 font-bold text-3xl">
-              Free Demo Classes will be taken on 26 - 30 July 2024.
-              <br />
               Classes will start from 1 Aug, 2024
             </p>
           </div>
