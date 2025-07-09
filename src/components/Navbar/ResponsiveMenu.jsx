@@ -38,7 +38,7 @@ const ResponsiveMenu = ({ showMenu, toggle }) => {
         <button
           className="primary-btn mt-5"
           onClick={() =>
-            window.open("https://forms.gle/fKyB9792DzVtBLKF7", "_blank")
+            window.open("", "_blank")
           }
         >
           Register Now
