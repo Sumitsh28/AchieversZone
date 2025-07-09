@@ -104,7 +104,7 @@ const Navbar = () => {
               <button
                 className="primary-btn"
                 onClick={() =>
-                  window.open("https://forms.gle/fKyB9792DzVtBLKF7", "_blank")
+                  window.open("", "_blank")
                 }
               >
                 Register Now
