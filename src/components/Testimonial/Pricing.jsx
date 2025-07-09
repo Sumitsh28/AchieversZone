@@ -37,7 +37,7 @@ const Pricing = () => {
       SinglePrice: 299,
       AllPriceSix: 4500,
       AllPriceSixCross: 5999,
-      link: "https://forms.gle/pLyjwS62eBRRSSdA6",
+      link: "",
     },
     {
       name: "JEE Mains / NEET",
@@ -46,7 +46,7 @@ const Pricing = () => {
       SinglePrice: 399,
       AllPriceSix: 5000,
       AllPriceSixCross: 6999,
-      link: "https://forms.gle/oWK5WMqhTQPvgWJM7",
+      link: "",
     },
     {
       name: "JEE Advanced",
@@ -55,7 +55,7 @@ const Pricing = () => {
       SinglePrice: 499,
       AllPriceSix: 5500,
       AllPriceSixCross: 8999,
-      link: "https://forms.gle/YoZpTvr18wEQut119",
+      link: "",
     },
   ];
 
